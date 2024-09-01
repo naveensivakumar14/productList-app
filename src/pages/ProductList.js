@@ -2,19 +2,21 @@ import { useContext, useState } from "react"
 import { ProductsContext } from "../contexts/ProductsContext";
 
 import ProductCard from "../components/ProductCard";
+// import Cart from "./Cart";
+
 function ProductList(){
 
 
-   //destructuring
+    //destrctiong productContext useStates
    const {products}=useContext(ProductsContext);
-
+   
+   //useState for search box
    const[search,setSearch]=useState([]);
    const[filterProducts,setfilterProducts]=useState(products)
 
    //search products
    function searchProducts(event){
      setSearch(event.target.value);
-    
    }
  
    //filter products
@@ -29,15 +31,18 @@ function ProductList(){
       }
    }
 
+   //refersh to show all products 
    function refresh(){
       setSearch([null]);
       setfilterProducts(products)
    }
    
-  
+
+
+
    return(
-      <div>
-         <div className=" py-10 flex flex-col justify-center items-center">
+      <div className="bg-[#ccdfff] ">
+         <div className="py-10 flex flex-col justify-center items-center">
             <h2 className="text-3xl font-bold">Popular Products</h2>
             
                <input value={search}  onChange={searchProducts} className="border border-black w-48 mt-4 p-2 outline-none rounded-sm" type="text" placeholder="search products" />
@@ -54,7 +59,7 @@ function ProductList(){
          <div className="flex flex-wrap justify-center items-center p-10">
             {
             filterProducts.map(product => (
-               // <p key={product.id}>{product.title}</p>
+               //<p key={product.id}>{product.title}</p>      First debug***
                <div key={product.id}>
                   <ProductCard product={product}/>
                </div>

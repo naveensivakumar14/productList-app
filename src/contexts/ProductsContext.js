@@ -14,10 +14,12 @@ const ProductsContext=createContext();
 function ProductsContextProvider({children}){
     //useState
     const [products,setProducts]=useState(dummyData.products);
-    // const [cart,setCart]=useState([]);
+    const [cart,setCart]=useState([]);
     const value = {
         products,
         setProducts,
+        cart,
+        setCart
     };
  
     /* To add Incart, addcart, removecart*/
