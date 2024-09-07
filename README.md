@@ -14,7 +14,7 @@ Tailwind CSS
 React JS
 React Components
 Context API
-React Hooks (useState(),useContext(),useEffects())
+React Hooks : (useState(),useContext(),useEffects())
 React Router
 JSON
 
