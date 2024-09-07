@@ -1,8 +1,12 @@
-ProductList App
-Overview
+ProductList App 👕🛍️🛒
+-----------------------------------
+Overview 😇
+--------------------
 ProductList is a simple React.js application that displays a list of products. An input field allows users to search for products by title. 
 The product data is stored in a JSON file and fetched into the application.
-Skills Used:
+
+Skills Used: 😍
+----------------
 HTML
 CSS
 JavaScript
@@ -15,7 +19,8 @@ React Router
 JSON
 
 
-Features
+Features 😎
+------------
 Display a list of products
 Search products by title
 Responsive design using Tailwind CSS
@@ -24,5 +29,7 @@ React.js
 Context API
 Tailwind CSS
 JSON for product data
+
+Thank you 😉
 
 
