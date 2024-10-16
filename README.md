@@ -1,5 +1,6 @@
 ProductList App 👕🛍️🛒
 -----------------------------------
+![Product List App](/public)
 Overview 😇
 --------------------
 ProductList is a simple React.js application that displays a list of products. An input field allows users to search for products by title. 
